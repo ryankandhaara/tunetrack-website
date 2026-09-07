@@ -148,8 +148,12 @@
                             <div class="ms-hc--inner">
 
                                 <h1 class="ms-hero-title">
-                                    Creative Home <br>
-                                    for <span class="glitch-text" data-text="Musicians">Musicians</span>
+                                    <span class="mobile-title-line">Creative</span>
+                                    <span class="mobile-title-line">Home</span>
+                                    <span class="mobile-title-line">for</span>
+                                    <span class="mobile-title-line">
+                                        <span class="glitch-text" data-text="Musicians">Musicians</span>
+                                    </span>
                                 </h1>
 
                             </div>
@@ -162,37 +166,40 @@
 
             <style>
             /* =========================================================
-            MOBILE HERO TITLE
-            Desktop tetap menggunakan style yang sekarang
+            HERO TITLE
+            DESKTOP
             ========================================================= */
 
-            @media (max-width: 767px) {
+            .mobile-title-line {
+                display: inline;
+            }
+
+
+            /* =========================================================
+            MOBILE ONLY
+            iPhone / small screens
+            ========================================================= */
+
+            @media screen and (max-width: 767px) {
 
                 .ms-hero-title {
-                    font-size: 52px !important;
-                    line-height: 0.92 !important;
-                    text-align: center !important;
+                    font-size: 63px !important;
+                    line-height: 1.02 !important;
                     letter-spacing: -2px !important;
+                    text-align: center !important;
                     white-space: normal !important;
+                    width: 100% !important;
+                    max-width: none !important;
                 }
 
-                .ms-hero-title br {
-                    display: none;
-                }
-
-                .ms-hero-title {
-                    max-width: 320px;
-                    margin-left: auto !important;
-                    margin-right: auto !important;
+                .mobile-title-line {
+                    display: block !important;
                 }
 
                 .ms-hero-title .glitch-text {
-                    display: block;
+                    display: inline-block !important;
                 }
 
-                .ms-hc--inner {
-                    width: 100%;
-                }
             }
             </style>
 
