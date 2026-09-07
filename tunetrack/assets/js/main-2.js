@@ -176,20 +176,6 @@
                 $('.main-header__nav ').removeClass('is_mobile');
             }
         });
-
-        $(document).on('click', '.is_mobile .navbar-nav > .menu-item-has-children > a', function(e) {
-            e.preventDefault();
-            if ($(this).hasClass('active')) {
-                $(this).removeClass('active');
-               $(this).siblings('.sub-menu').slideUp(100);
-            } else {
-                $('.menu-item-has-children > a').removeClass('active');
-                $(this).addClass('active');
-                $('.sub-menu').slideUp(200);
-                $(this).siblings('.sub-menu').slideDown(100);
-            }
-          });
-
          
     }
 
